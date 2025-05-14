@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, shrink-to-fit=no, user-scalable=no"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap 5.0.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jq 3.7.1-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/icons.css" />
+    <link rel="stylesheet" href="./styles/custom.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/advantages.css" />
+    <link rel="stylesheet" href="./styles/preview.css" />
+    <link rel="stylesheet" href="./styles/feedback.css" />
+    <link rel="stylesheet" href="./styles/contacts.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/burger.css" />
+
+    <!-- yandex maps -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=
+654bdf05-abc4-4f8b-924c-b24370c486dd&lang=ru_RU"></script>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/banner.js"></script>
+
+    <title>Поляна</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="header pt-2" id="header">
+        <div class="container-md">
+          <div class="row header-main">
+            <div class="col">
+              <div class="header-main__container">
+                <div class="header-main__logo">
+                  <img src="./static/img/header/logo-main.png" alt="logo" />
+                </div>
+                <div class="header-main__menu">
+                  <div class="header-main__menu-top">
+                    <div class="header-main__search-container">
+                      <input
+                        class="header-main__search-input"
+                        type="text"
+                        placeholder="Поиск"
+                      />
+                      <div
+                        class="header-main__search-icon icon__search--black icon-base"
+                      ></div>
+                    </div>
+                    <div class="header-main__contacts">
+                      <div class="header-main__contacts-phone">
+                        <a href="tel:+79528009988">+7 952 800 9988</a>
+                        <a href="tel:+73822302414">+7 3822 302-414</a>
+                      </div>
+                      <div class="header-main__contacts-social">
+                        <div class="header-main__desktop-menu">
+                          <a href="#" class="icon__circle icon__circle--green">
+                            <div class="icon-base icon__phone--white"></div>
+                          </a>
+                          <a href="#" class="icon__circle icon__circle--green">
+                            <div class="icon-base icon__wapp--white"></div>
+                          </a>
+                          <a href="#" class="icon__circle icon__circle--green">
+                            <div class="icon-base icon__tg--white"></div>
+                          </a>
+                        </div>
+                        <div class="header-main__mobile-menu">
+                          <div class="header-main__mobile-search">
+                            <a
+                              class="icon__circle icon__circle--outline icon__circle--outline-green header-main__search-btn"
+                            >
+                              <div class="icon__base icon__search--green"></div>
+                            </a>
+                          </div>
+                          <a href="#">
+                            <div
+                              class="icon-base icon__lc--green icon__lc--big"
+                            ></div
+                          ></a>
+                          <a href="#">
+                            <div
+                              class="icon-base icon__basket--green icon__basket--big"
+                            >
+                              <div
+                                class="notification--active notification--big"
+                              >
+                                <span class="notification-value">3</span>
+                              </div>
+                            </div></a
+                          >
+                          <a href="#" class="burger-handler">
+                            <div class="icon-base icon__burger--green"></div
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-main__menu-bottom">
+                    <div class="header-main__bottom-nav">
+                      <div class="header-main__nav-item">
+                        <a href="#">Главная</a>
+                      </div>
+                      <div class="header-main__nav-item">
+                        <a href="#">Каталог</a>
+                      </div>
+                      <div class="header-main__nav-item">
+                        <a href="#">О компании</a>
+                      </div>
+                      <div class="header-main__nav-item">
+                        <a href="#">Контакты</a>
+                      </div>
+                    </div>
+                    <div class="header-main__bottom-lc">
+                      <a href="#">
+                        <span>Личный кабинет</span>
+                        <div class="icon-base icon__lc--green"></div
+                      ></a>
+                      <a href="#">
+                        <div class="icon-base icon__basket--green">
+                          <!-- Если есть уведомления, иначе блок не добавляем-->
+                          <div class="notification--active">
+                            <!-- Количество уведомлений -->
+                            <span class="notification-value">3</span>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row header-banner">
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+      <div class="banner" id="banner">
+        <!-- banner background -->
+        <div class="banner-bg"></div>
+        <div class="banner-slider">
+          <div class="banner-slider__list">
+            <div
+              class="banner-slider__list-item banner-slider__list-item--active"
+              id="banner-slide-6"
+            >
+              <div class="container-md position-relative">
+                <div
+                  class="banner-slider__item-img banner-slider__item-img--main"
+                >
+                  <img
+                    src="./static/img/banner/slider/slide-1.webp"
+                    alt="slide-1"
+                  />
+                </div>
+              </div>
+              <div
+                class="banner-slider__item-img banner-slider__item-img--second"
+              >
+                <img
+                  src="./static/img/banner/slider/slide-bg-1.webp"
+                  alt="slide-bg-1"
+                />
+              </div>
+            </div>
+            <div class="banner-slider__list-item" id="banner-slide-2">
+              <div class="container-md position-relative">
+                <div
+                  class="banner-slider__item-img banner-slider__item-img--main"
+                >
+                  <img
+                    src="./static/img/banner/slider/slide-2.webp"
+                    alt="slide-2"
+                  />
+                </div>
+              </div>
+              <div
+                class="banner-slider__item-img banner-slider__item-img--second"
+              >
+                <img
+                  src="./static/img/banner/slider/slide-bg-2.webp"
+                  alt="slide-bg-2"
+                />
+              </div>
+            </div>
+            <div class="banner-slider__list-item" id="banner-slide-3">
+              <div class="container-md position-relative">
+                <div
+                  class="banner-slider__item-img banner-slider__item-img--main"
+                >
+                  <img
+                    src="./static/img/banner/slider/slide-3.webp"
+                    alt="slide-2"
+                  />
+                </div>
+              </div>
+              <div
+                class="banner-slider__item-img banner-slider__item-img--second"
+              >
+                <img
+                  src="./static/img/banner/slider/slide-bg-3.webp"
+                  alt="slide-bg-3"
+                />
+              </div>
+            </div>
+            <div class="banner-slider__list-item" id="banner-slide-4">
+              <div class="container-md position-relative">
+                <div
+                  class="banner-slider__item-img banner-slider__item-img--main"
+                >
+                  <img
+                    src="./static/img/banner/slider/slide-4.webp"
+                    alt="slide-2"
+                  />
+                </div>
+              </div>
+              <div
+                class="banner-slider__item-img banner-slider__item-img--second"
+              >
+                <img
+                  src="./static/img/banner/slider/slide-bg-4.webp"
+                  alt="slide-bg-4"
+                />
+              </div>
+            </div>
+            <div class="banner-slider__list-item" id="banner-slide-5">
+              <div class="container-md position-relative">
+                <div
+                  class="banner-slider__item-img banner-slider__item-img--main"
+                >
+                  <img
+                    src="./static/img/banner/slider/slide-5.webp"
+                    alt="slide-2"
+                  />
+                </div>
+              </div>
+              <div
+                class="banner-slider__item-img banner-slider__item-img--second"
+              >
+                <img
+                  src="./static/img/banner/slider/slide-bg-5.webp"
+                  alt="slide-bg-5"
+                />
+              </div>
+            </div>
+            <div class="banner-slider__list-item" id="banner-slide-1">
+              <div class="container-md position-relative">
+                <div
+                  class="banner-slider__item-img banner-slider__item-img--main"
+                >
+                  <img
+                    src="./static/img/banner/slider/slide-6.webp"
+                    alt="slide-6"
+                  />
+                </div>
+              </div>
+              <div
+                class="banner-slider__item-img banner-slider__item-img--second"
+              >
+                <img
+                  src="./static/img/banner/slider/slide-bg-6.webp"
+                  alt="slide-bg-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-md">
+          <div class="row">
+            <div class="col">
+              <div class="banner-desktop">
+                <div class="banner-desktop__title">
+                  <span>
+                    <div class="banner-desktop__title--big">Оптовая и</div>
+                    <div class="banner-desktop__title--big">розничная</div>
+                    <div class="banner-desktop__title--medium">продажа</div>
+                    <div class="banner-desktop__title--small">
+                      свежемороженной продукции
+                    </div>
+                  </span>
+                </div>
+                <div class="banner-desktop__menu">
+                  <div class="banner-desktop__menu-selected">
+                    <div class="banner-desktop__menu-item">
+                      <div class="banner-desktop__menu-item--name">
+                        <div
+                          class="banner-desktop__menu-name banner-desktop__menu-name--selected"
+                          id="menu-name-6"
+                        >
+                          <span>Овощи</span>
+                        </div>
+                        <div class="banner-desktop__menu-name" id="menu-name-1">
+                          <span>Грибы</span>
+                        </div>
+                        <div class="banner-desktop__menu-name" id="menu-name-2">
+                          <span>Ягоды</span>
+                        </div>
+                        <div class="banner-desktop__menu-name" id="menu-name-3">
+                          <span>Мёд</span>
+                        </div>
+                        <div class="banner-desktop__menu-name" id="menu-name-4">
+                          <span>Фрукты</span>
+                        </div>
+                        <div class="banner-desktop__menu-name" id="menu-name-5">
+                          <span>Шишка</span>
+                        </div>
+                      </div>
+                      <a href="#" class="banner-desktop__menu-item--link">
+                        <span>Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="banner-desktop__menu-list">
+                    <div
+                      class="banner-desktop__menu-item"
+                      id="menu-item-1"
+                      style="order: 1"
+                    >
+                      <div class="banner-desktop__menu-item--img">
+                        <img src="./static/img/banner/base.webp" alt="base" />
+                      </div>
+                      <div class="banner-desktop__menu-item--name">
+                        <span>Грибы</span>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-desktop__menu-item"
+                      id="menu-item-2"
+                      style="order: 2"
+                    >
+                      <div class="banner-desktop__menu-item--img">
+                        <img src="./static/img/banner/base2.webp" alt="base2" />
+                      </div>
+                      <div class="banner-desktop__menu-item--name">
+                        <span>Ягоды</span>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-desktop__menu-item"
+                      id="menu-item-3"
+                      style="order: 3"
+                    >
+                      <div class="banner-desktop__menu-item--img">
+                        <img src="./static/img/banner/base3.webp" alt="base3" />
+                      </div>
+                      <div class="banner-desktop__menu-item--name">
+                        <span>Мёд</span>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-desktop__menu-item"
+                      id="menu-item-4"
+                      style="order: 4"
+                    >
+                      <div class="banner-desktop__menu-item--img">
+                        <img src="./static/img/banner/base4.webp" alt="base4" />
+                      </div>
+                      <div class="banner-desktop__menu-item--name">
+                        <span>Фрукты</span>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-desktop__menu-item"
+                      id="menu-item-5"
+                      style="order: 5"
+                    >
+                      <div class="banner-desktop__menu-item--img">
+                        <img src="./static/img/banner/base5.webp" alt="base5" />
+                      </div>
+                      <div class="banner-desktop__menu-item--name">
+                        <span>Шишка и орех</span>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-desktop__menu-item banner-desktop__menu-item--selected"
+                      id="menu-item-6"
+                      style="order: 6"
+                    >
+                      <div class="banner-desktop__menu-item--img">
+                        <img src="./static/img/banner/base6.webp" alt="base6" />
+                      </div>
+                      <div class="banner-desktop__menu-item--name">
+                        <span>Овощи</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="banner-mobile"><h1>MOBILE BUNNER</h1></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="content">
+        <div class="advantages pb-2">
+          <div class="container-md">
+            <div class="row">
+              <div class="col">
+                <div class="advantages__list">
+                  <div class="advantages__item">
+                    <div class="advantages__item-icon">
+                      <div class="base-icon icon__circle icon__circle--gray">
+                        <div class="icon-base icon__truck--green"></div>
+                      </div>
+                      <div class="advantages__item-line"></div>
+                    </div>
+                    <div class="advantages__item-text">
+                      <span
+                        >Доставка по Томску бесплатно при заказе от 1000
+                        рублей</span
+                      >
+                    </div>
+                  </div>
+                  <div class="advantages__item">
+                    <div class="advantages__item-icon">
+                      <div class="base-icon icon__circle icon__circle--gray">
+                        <div class="icon-base icon__handesnake--green"></div>
+                      </div>
+                      <div class="advantages__item-line"></div>
+                    </div>
+                    <div class="advantages__item-text">
+                      <span>
+                        Сотрудничество по всей Сибири: Новосибирск, Омск,
+                        Кемерово и др.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="advantages__item">
+                    <div class="advantages__item-icon">
+                      <div class="base-icon icon__circle icon__circle--gray">
+                        <div class="icon-base icon__sale--green"></div>
+                      </div>
+                      <div class="advantages__item-line"></div>
+                    </div>
+                    <div class="advantages__item-text">
+                      <span
+                        >Персональные скидки и выгодные предложения постоянным
+                        клиентам</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview pb-5 position-relative">
+          <div class="preview-bg">
+            <div class="preview-bg__item">
+              <img
+                src="./static/img/preview/preview-bg-item.png"
+                alt="preview-bg-item.png"
+              />
+            </div>
+            <div class="preview-bg__item">
+              <img
+                src="./static/img/preview/preview-bg-item.png"
+                alt="preview-bg-item.png"
+              />
+            </div>
+            <div class="preview-bg__item">
+              <img
+                src="./static/img/preview/preview-bg-item.png"
+                alt="preview-bg-item.png"
+              />
+            </div>
+          </div>
+          <div class="container-md">
+            <div class="row">
+              <div class="col">
+                <div class="preview-list">
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-1.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Ягоды</span><span> свежемороженные</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Брусника, вишня, голубика, ежевика, земляника,
+                          жимолость, калина, клубника, клюква, крыжовник,
+                          малина, облепиха, смородина, черешня, черника, рябина
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-2.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Фрукты</span><span> свежемороженные</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Абрикос, ананас, груша, дыня, киви, лимон (кружок),
+                          персик, манго, слива, фруктово-ягодная смесь, яблоко
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-3.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Овощи</span><span> свежемороженные</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Баклажан, горошек, имбирь, кабачок, капуста, картофель
+                          (фри, дольки), кукуруза, лук, морковь, перец, томат,
+                          фасоль стручковая, шпинат, спаржа
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-4.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Грибы</span><span> свежемороженные</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Белый, моховик, подосиновик, опенок, шампиньоны
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-5.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Грибы соленые и</span><span> маринованные</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Белый, груздь, ассорти грибное: в солено-отварном
+                          рассоле или маринованное в стекле
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-6.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Грибы</span><span> сушеные</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Белый гриб 3-х сортов, лисичка, моховик, подосиновик
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-7.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Полезные</span><span> продукты</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Мед, шиповник, ядро кедровое, клюква сушеная, жир
+                          барсучий, живица, деготь, чага на березовом соке
+                          (сироп), масло кедровое, пихтовое, варенье и тд
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-8.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Смеси</span><span> овощные</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Смеси овощные: Весенняя, Весенняя с брюсельской
+                          капустой, Гавайская, Европейская, Итальянская, Лечо,
+                          Мексиканская, Паприкаш, Рататуй
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-item">
+                    <div class="preview-item__top">
+                      <div
+                        class="preview-item__img"
+                        style="
+                          background-image: url('./static/img/test/tovar-9.jpg');
+                        "
+                      ></div>
+                      <div class="preview-item__title">
+                        <span>Смеси</span><span> фруктово-ягодные</span>
+                      </div>
+                    </div>
+                    <div class="preview-item__bottom">
+                      <div class="preview-item__desc">
+                        <!-- Ваще желательно каждый нейм в span закинуть или li -->
+                        <span>
+                          Яркое сочетание фруктов и ягод в одной упаковке
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="container-md position-relative">
+            <div class="about-bg">
+              <div class="about-bg__item" id="about-bg__item--1">
+                <img src="./static/img/about/mushroom.png" alt="mushroom" />
+              </div>
+              <div class="about-bg__item" id="about-bg__item--2">
+                <img src="./static/img/about/tomato.png" alt="tomato" />
+              </div>
+              <div class="about-bg__item" id="about-bg__item--3">
+                <img src="./static/img/about/apple.png" alt="apple" />
+              </div>
+              <div class="about-bg__item" id="about-bg__item--4">
+                <img src="./static/img/about/corn.png" alt="corn" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="about-title"><span>О компании</span></div>
+                <div class="about-list">
+                  <div class="about-list__item">
+                    <span>
+                      Шедрая поляна — одна из самых крупных заготовительных и
+                      торговых организаций в сибирском регионе, работающая на рынке, а также
+                      производственная компания, перерабатывающая грибы и ягоды.
+                    </span>
+                  </div>
+                  <div class="about-list__item">
+                    <span>
+                      Компания успешно занимается реализацией замороженной и
+                      сушеной дикорастущей и садовой ягоды, солено-отварных
+                      грибов и свежемороженных овощей. Мы предлагаем нашу
+                      продукцию частным клиентам, оптовым компаниям, владельцам
+                      магазинов и заведений общественного питания.
+                    </span>
+                  </div>
+                  <div class="about-list__item">
+                    <span>
+                      Мы работаем на современном скороморозильном и фасовочном
+                      оборудовании. Вся замороженная продукция изготовлена по
+                      технологии шоковой заморозки.
+                    </span>
+                  </div>
+                  <div class="about-list__item">
+                    <span>
+                      Процесс заморозки приближен к месту сбора сырья, что
+                      позволяет нам осуществлять консервацию продукта
+                      практически сразу же после сбора и обеспечивать
+                      сохранность его вкусовых качеств и энергетической
+                      ценности.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback pt-4">
+          <div class="feedback-bg">
+            <!-- <div class="feedback-bg--border">
+              <img src="./static/img/feedback/border.png" alt="border.png" />
+            </div> -->
+            <div class="feedback-bg--fluid">
+              <img src="./static/img/feedback/bg.webp" alt="border.png" />
+            </div>
+          </div>
+          <div class="container-md">
+            <div class="row">
+              <div class="col">
+                <div class="feedback-container">
+                  <div class="feedback-form">
+                    <div class="feedback-form__layers">
+                      <form onsubmit="alert('Отправлено!');return false;">
+                        <input
+                          type="text"
+                          name="organization"
+                          id="feedback-organization"
+                          placeholder="Организация"
+                        />
+                        <input
+                          type="text"
+                          name="phone"
+                          id="feedback-phone"
+                          placeholder="Телефон"
+                        />
+                        <input
+                          type="text"
+                          name="city"
+                          id="feedback-city"
+                          placeholder="Город"
+                        />
+                        <textarea
+                          name="message"
+                          id="feedback-message"
+                          placeholder="Сообщение"
+                        ></textarea>
+                        <button type="submit"><span>Отправить</span></button>
+                      </form>
+                    </div>
+                    <div class="feedback-form__info">
+                      <div class="feedback-form__logo">
+                        <img
+                          src="./static/img/feedback/feedback-logo.png"
+                          alt="logo"
+                        />
+                      </div>
+                      <div class="feedback-form__title">
+                        <span>
+                          Хотите обсудить вопросы по сотрудничеству?
+                        </span>
+                      </div>
+                      <div class="feedback-form__desc">
+                        <span
+                          >Оставьте заявку, наш менеджер свяжется с вами в
+                          рабочее время.</span
+                        >
+                      </div>
+                      <div class="feedback-form__img">
+                        <img
+                          src="./static/img/feedback/berry.png"
+                          alt="berry"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="container-md">
+            <div class="row">
+              <div class="col">
+                <div class="contacts-title">
+                  <span>Контакты</span>
+                </div>
+                <div class="contacts-list">
+                  <div class="contacts-list__item">
+                    <div class="contacts-list__item-icon">
+                      <div class="icon-base icon__circle icon__circle--gray">
+                        <div class="icon-base icon__contact--green"></div>
+                      </div>
+                    </div>
+                    <div class="contacts-list__item-text">
+                      <span>+7 (952) 800 99 88</span>
+                      <span>Адрес: г. Томск, ул, Пролетарская 57б</span>
+                    </div>
+                  </div>
+                  <div class="contacts-list__item">
+                    <div class="contacts-list__item-icon">
+                      <div class="icon-base icon__circle icon__circle--gray">
+                        <div class="icon-base icon__time--green"></div>
+                      </div>
+                    </div>
+                    <div class="contacts-list__item-text">
+                      <span>Пн-Пт: с 9:00 до 17:00, обед с 13:00 до 14:00</span>
+                      <span>Сб: с 9:00 до 13:00, Вс - выходной</span>
+                    </div>
+                  </div>
+                  <div class="contacts-list__item">
+                    <div class="contacts-list__item-icon">
+                      <div class="icon-base icon__circle icon__circle--gray">
+                        <div class="icon-base icon__order--green"></div>
+                      </div>
+                    </div>
+                    <div class="contacts-list__item-text">
+                      <span
+                        >Вы также можете задать вопросы <br />или оформить заказ
+                        через <br /><a href="#">WhatsApp</a> или
+                        <a href="#">Telegram</a></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-map">
+                  <div id="contact-map" style="width: 100%; height: 100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer" id="footer">
+        <div class="footer-bg"></div>
+        <div class="container-md">
+          <div class="row">
+            <div class="col">
+              <div class="footer-logo">
+                <div class="footer-logo__img">
+                  <img
+                    src="./static/img/header/logo-main.png"
+                    alt="logo-main.png"
+                  />
+                </div>
+                <div class="footer-logo__text">
+                  <span
+                    >Оптовая и розничная продажа <br />
+                    свежемороженной продукции</span
+                  >
+                </div>
+              </div>
+              <div class="footer-catalog">
+                <a href="#" class="footer-catalog__item"
+                  ><span>Ягоды свежемороженные</span></a
+                >
+                <a href="#" class="footer-catalog__item"
+                  ><span>Грибы свежемороженные</span></a
+                >
+                <a href="#" class="footer-catalog__item"
+                  ><span>Полезные продукты</span></a
+                >
+                <a href="#" class="footer-catalog__item"
+                  ><span>Фрукты свежемороженные</span></a
+                >
+                <a href="#" class="footer-catalog__item"
+                  ><span>Грибы соленые и маринованные</span></a
+                >
+                <a href="#" class="footer-catalog__item"
+                  ><span>Овощные смеси</span></a
+                >
+                <a href="#" class="footer-catalog__item"
+                  ><span>Овощи свежемороженные</span></a
+                >
+                <a href="#" class="footer-catalog__item"
+                  ><span>Грибы сушеные</span></a
+                >
+                <a href="#" class="footer-catalog__item"
+                  ><span>Фруктово-ягодные смеси</span></a
+                >
+              </div>
+              <div class="footer-contacts">
+                <span>+7 (952) 800 99 88</span>
+                <span>г. Томск, ул, Пролетарская 57б</span>
+                <span>Пн-Пт: с 9:00 до 17:00, обед с 13:00 до 14:00</span>
+                <span>Сб: с 9:00 до 13:00, Вс - выходной</span>
+              </div>
+              <div class="footer-social">
+                <a href="#" target="_blank" class="footer-social__item">
+                  <div
+                    class="icon-base icon__circle icon__circle--green icon__circle--big"
+                  >
+                    <div class="icon-base icon__wapp--white"></div>
+                  </div>
+                </a>
+                <a href="#" target="_blank" class="footer-social__item">
+                  <div
+                    class="icon-base icon__circle icon__circle--green icon__circle--big"
+                  >
+                    <div class="icon-base icon__tg--white"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="footer-license">
+                <span
+                  >Шедрая Поляна, 2025 год.
+                  <a href="">Политика конфиденциальности</a></span
+                >
+                <span>Разработка сайта - <a href="">Help-GROUP</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-burger">
+      <div class="modal-inner burger-menu">
+        <div class="burger-logo">
+          <img src="./static/img/header/logo-main.png" alt="logo-main.png" />
+        </div>
+        <div class="modal-close">
+          <div class="icon__close--green"></div>
+        </div>
+        <div class="burger-list">
+          <div class="burger-item"><a href="#">Главная</a></div>
+          <div class="burger-item"><a href="#">Каталог</a></div>
+          <div class="burger-item"><a href="#">О компании</a></div>
+          <div class="burger-item"><a href="#">Контакты</a></div>
+          <div class="burger-item">
+            <a href="#" class="burger-lc">
+              <span>Личный кабинет</span>
+              <div class="icon-base icon__lc--green"></div
+            ></a>
+          </div>
+          <div class="burger-social">
+            <a
+              href="#"
+              class="icon__circle icon__circle--big icon__circle--green"
+            >
+              <div class="icon-base icon__phone--white icon__size--26px"></div>
+            </a>
+            <a
+              href="#"
+              class="icon__circle icon__circle--big icon__circle--green"
+            >
+              <div class="icon-base icon__wapp--white icon__size--26px"></div>
+            </a>
+            <a
+              href="#"
+              class="icon__circle icon__circle--big icon__circle--green"
+            >
+              <div class="icon-base icon__tg--white icon__size--26px"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

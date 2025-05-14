@@ -1,0 +1,127 @@
+.footer {
+  position: relative;
+  padding-top: calc(var(--base-gap) * 4);
+  padding-bottom: calc(var(--base-gap) * 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+.footer-logo {
+}
+.footer-logo__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo__img img {
+  width: 292px;
+}
+.footer-logo__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo__text span {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: var(--clr-text-green);
+}
+.footer-catalog {
+  padding-top: calc(var(--base-gap) * 2);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(var(--base-gap) / 2);
+}
+
+.footer-catalog__item {
+  color: var(--clr-text-green);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.footer-catalog__item:hover,
+.footer-catalog__item:active,
+.footer-catalog__item:focus {
+  color: var(--clr-text-green);
+}
+
+.footer-contacts {
+  padding-top: calc(var(--base-gap) * 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contacts span {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--clr-text-green);
+}
+
+.footer-social {
+  padding: calc(var(--base-gap)) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--base-gap) / 2);
+}
+
+.footer-social__item .icon__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social__item .icon__circle > div {
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+}
+
+.footer-license {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: calc(var(--base-gap) / 2);
+}
+
+.footer-license span {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--clr-text-green);
+  text-align: center;
+}
+
+.footer-license a {
+  color: var(--clr-text-green);
+}
+
+.footer-license a:hover,
+.footer-license a:active,
+.footer-license a:focus {
+  color: var(--clr-text-green);
+  text-decoration: none;
+}
+
+.footer-bg {
+  position: absolute;
+  top: 18%;
+  width: 2327px;
+  height: 2327px;
+  border-radius: 2327px;
+  background-color: var(--clr-bg-green);
+  z-index: -1;
+}
+
+@media (max-width: 996px) {
+  .footer-catalog__item {
+    font-size: 14px;
+  }
+}

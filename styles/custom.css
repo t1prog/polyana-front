@@ -1,0 +1,63 @@
+:root {
+  --clr-text-green: #3e8357;
+  --clr-icon-green: #9abf9d;
+  --clr-icon-gray: #efefef;
+  --clr-bg-green: #c7dec1;
+  --clr-black-green: #428057;
+  --clr-black: #202020;
+  --clr-white-1: #f9fbf8;
+  --clr-lite-green: #eff6ed;
+  --clr-notification: #ea3b3b;
+
+  --cstm-item-width: 325px;
+  --border-radius: 15px;
+  --base-shadow: 0px 5px 10px 0px #0000000d;
+
+  --header-h--mobile: 68px;
+  --header-h--desktop: 88px;
+
+  --base-gap: 20px;
+
+  --preview-padding-top: 140px;
+  --preview-item-top-height: 190px;
+  --preview-row-gap: 140px;
+  --preview-img-top: -70%;
+  --preview-img-size: 220px;
+  --preview-img-border: 16px;
+
+  --preview-title-padding-bottom: 20px;
+  --preview-title-max-width: 320px;
+  --preview-title-font-size: 20px;
+
+  --preview-desc-padding-top: 20px;
+  --preview-desc-max-width: 320px;
+  --preview-desc-font-size: 14px;
+
+  --preview-bottom-height: 140px;
+
+  --icon-circle-size: 32px;
+  --icon-circle-big-size: 45px;
+}
+
+/* Кастомный стиль для контейнера */
+@media screen and (min-width: 1400px) {
+  .container,
+  .container-xl,
+  .container-xs,
+  .container-md,
+  .container-lg,
+  .container-xxl {
+    max-width: 1042px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-xl,
+  .container-xs,
+  .container-md,
+  .container-lg,
+  .container-xxl {
+    max-width: 1042px !important;
+  }
+}
